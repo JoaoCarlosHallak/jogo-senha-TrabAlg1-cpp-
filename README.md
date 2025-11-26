@@ -49,24 +49,66 @@ Se a senha for `1234` e o palpite for `1562`:
 
 ```text
 =========================================
-         J O G O    D A    S E N H A         
+        J O G O   D A   S E N H A        
 =========================================
 
-Bem-vindo ao desafio!
-O computador gerou uma senha secreta com 4 digitos.
+ Bem-vindo ao desafio!
+
+ O computador gerou uma senha secreta com 4 digitos.
+ Cada digito e um numero entre 1 e 6.
+ Repeticoes sao permitidas. MAX: 10
+
+ Seu objetivo e descobrir a senha!
+
+-----------------------------------------
+ Dicas do jogo:
+ - Voce deve digitar um numero de 4 digitos.
+ - Exemplo de palpite valido: 1562
+ - Cada tentativa mostrara se voce acertou ou errou.
+-----------------------------------------
+
+ Boa sorte! Tente desvendar a senha...
+
+=========================================
 
 ----------- 1 TURNO -----------
-Digite a senha >> 1234
-_xox
+Digite a senha >> 2345
+Resultado: __x_
 
 ----------- 2 TURNO -----------
-Digite a senha >> 2436
-ooo_
+Digite a senha >> 2345
+Resultado: __x_
 
-...
+----------- 3 TURNO -----------
+Digite a senha >> 2354
+Resultado: ___x
 
 ----------- 4 TURNO -----------
-Digite a senha >> 2433
+Digite a senha >> 2351
+Resultado: ___o
+
+----------- 5 TURNO -----------
+Digite a senha >> 1231
+Resultado: x__o
+
+----------- 6 TURNO -----------
+Digite a senha >> 2131
+Resultado: _x_o
+
+----------- 7 TURNO -----------
+Digite a senha >> 2211
+Resultado: __oo
+
+----------- 8 TURNO -----------
+Digite a senha >> 4311
+Resultado: x_oo
+
+----------- 9 TURNO -----------
+Digite a senha >> 5411
+Resultado: _ooo
+
+----------- 10 TURNO -----------
+Digite a senha >> 6411
 Resultado: oooo
 
-Parabens, voce venceu!
+PARABENS! VOCE VENCEU!
