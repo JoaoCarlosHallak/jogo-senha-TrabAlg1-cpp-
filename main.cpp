@@ -15,19 +15,31 @@ int passwordGenerator(){
     return d1 * 1000 + d2 * 100 + d3 * 10 + d4;
 }
 
-void interface() {
+ void interface() {
     cout << "=========================================\n";
-    cout << "         J O G O    D A    S E N H A         \n";
+    cout << "        J O G O   D A   S E N H A        \n";
     cout << "=========================================\n";
-    cout << " Bem-vindo ao desafio!\n\n";
-    cout << " O computador gerou uma senha secreta com 4 digitos (1 a 6).\n";
-    cout << " MAX TENTATIVAS: 10\n\n";
-    cout << " ------------->:\n";
-    cout << " o : Numero correto na posicao correta.\n";
-    cout << " x : Numero existe, mas na posicao errada.\n";
-    cout << " _ : Numero nao existe ou ja foi contabilizado.\n";
+    cout << "\n";
+    cout << " Bem-vindo ao desafio!\n";
+    cout << "\n";
+    cout << " O computador gerou uma senha secreta com 4 digitos.\n";
+    cout << " Cada digito e um numero entre 1 e 6.\n";
+    cout << " Repeticoes sao permitidas. MAX: 10\n";
+    cout << "\n";
+    cout << " Seu objetivo e descobrir a senha!\n";
+    cout << "\n";
+    cout << "-----------------------------------------\n";
+    cout << " Dicas do jogo:\n";
+    cout << " - Voce deve digitar um numero de 4 digitos.\n";
+    cout << " - Exemplo de palpite valido: 1562\n";
+    cout << " - Cada tentativa mostrara se voce acertou ou errou.\n";
+    cout << "-----------------------------------------\n";
+    cout << "\n";
+    cout << " Boa sorte! Tente desvendar a senha...\n";
+    cout << "\n";
     cout << "=========================================\n" << endl;
-}
+
+} 
 
 bool entryValidator(int guess) {
     if (guess < 1000 || guess > 9999) return false;
