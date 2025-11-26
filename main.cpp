@@ -22,7 +22,7 @@ void interface() {
     cout << " Bem-vindo ao desafio!\n\n";
     cout << " O computador gerou uma senha secreta com 4 digitos (1 a 6).\n";
     cout << " MAX TENTATIVAS: 10\n\n";
-    cout << " Legenda:\n";
+    cout << " ------------->:\n";
     cout << " o : Numero correto na posicao correta.\n";
     cout << " x : Numero existe, mas na posicao errada.\n";
     cout << " _ : Numero nao existe ou ja foi contabilizado.\n";
