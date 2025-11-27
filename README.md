@@ -1,4 +1,4 @@
-# 🔒 Exercício 1: Jogo da Senha (Mastermind)
+# 🔒 Exercício 1: Jogo da Senha 
 
 Este projeto consiste na implementação do clássico **Jogo da Senha** em C++. O objetivo é desafiar o computador (Dono do Segredo) e descobrir uma senha oculta de 4 dígitos através de lógica e dedução.
 
