@@ -56,6 +56,24 @@ bool entryValidator(int guess) {
 }
 
 void gameFunc(){
+    int difficult; 
+    cout << "Escolha uma dificuldade:" << endl;  
+    cout << "1 - Facil(10 tentativas)\n2 - Medio(7 tentativas)\n3 - Dificil(4 tentativas)" << endl;
+    cin >> difficult;
+
+    if (difficult != 1 && difficult != 2 && difficult != 3){
+        cout << "ERRO: Opcao inexistente..." << endl;
+        gameFunc();
+    } else if (difficult == 1) {
+        difficult = 10;
+    } else if (difficult == 2){
+        difficult = 7;
+    } else {
+        difficult = 4;
+    }
+
+
+
     int guess;
     int password = passwordGenerator();
 
@@ -67,7 +85,7 @@ void gameFunc(){
     bool used1, used2, used3, used4;
     char r1, r2, r3, r4; 
 
-    for (int i = 1; i <= 10; i++){
+    for (int i = 1; i <= difficult; i++){
 
         used1 = used2 = used3 = used4 = false;
         r1 = '_'; r2 = '_'; r3 = '_'; r4 = '_';
@@ -161,7 +179,7 @@ void gameFunc(){
         if (r1 == 'o' && r2 == 'o' && r3 == 'o' && r4 == 'o'){
             cout << "PARABENS! VOCE VENCEU!" << endl;
             break;
-        } else if (i == 10){
+        } else if (i == difficult){
             cout << "Voce perdeu! A senha era: " << password << endl;
         }
     }
