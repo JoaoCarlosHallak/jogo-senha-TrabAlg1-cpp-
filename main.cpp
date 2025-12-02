@@ -42,7 +42,7 @@ int passwordGenerator(){
 } 
 
 bool entryValidator(int guess) {
-    if (guess < 1000 || guess > 6666) return false;
+    if (guess < 1000 || guess > 9999) return false;
 
     int dg1 = guess / 1000;
     int dg2 = (guess % 1000) / 100;
